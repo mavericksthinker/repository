@@ -26,7 +26,7 @@ abstract class DBRepository
 
     public function getAll(){
         
-        return $this->model->all();
+        return $this->model->all()->toArray();
         
     }
 }

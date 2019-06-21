@@ -3,8 +3,12 @@
 namespace App\Repositories;
 
 use Illuminate\Contracts\Cache\Repository as Cache;
-// This class will act as a decorator for EloquentConversationRepository( to avoid modifing the main repo class and 
-// still achieving the aim of modification)
+/**
+ * This class will act as a decorator for EloquentConversationRepository( to avoid modifing the main repo class and 
+ * still achieving the aim of modification)
+ * 
+ * The aim of this class is to cache the data
+ */
 class CacheConversationRepository implements ConversationRepository
 {
 
