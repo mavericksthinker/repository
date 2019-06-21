@@ -2,13 +2,26 @@
 
 namespace App\Repositories;
 
-class EloquentConversationRepository implements ConversationRepository
+use App\Conversation;
+
+class EloquentConversationRepository extends DBRepository implements ConversationRepository
 {
-    
-    public function getAll(){
+    /**
+     * @var Conversation
+     */
+    protected $model;
+
+    function __construct(Conversation $model)
+    {
         
-        return ['get','all','conversation'];
+        $this->model = $model;
         
     }
+
+//    public function getAll(){
+//        
+//        return Conversation::all();
+//        
+//    }
     
 }

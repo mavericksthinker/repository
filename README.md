@@ -11,7 +11,10 @@ and well organized which is most required in a large applications.
 We can implement interface to put a layer in between the controllers and the transformer model
 that will give us flexibility
 
-We can also implement decorators to transform the data and re-utilize the transformer the way we intend to  
+So while using repositories, we will find a scenario of constantly reimplementing common methods which is cumbersome. Well, we can solve this with simple inheritance.
+By segregating the method to an abstractRepository we can reuse the code and decorate the model transformers as required
+
+We can implement decorators to transform the data and re-utilize the transformer the way we intend to  
 
 ### Advantage
 
